@@ -74,6 +74,16 @@ ul li .button-container {
 
 ul li .button-container span {
     margin-right: 10px;
+    font-size: 7px; /* Adjust the font size as needed */
+}
+ul li input[type="radio"] {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.table td:last-child {
+    white-space: nowrap;
+    width: 1%;
 }
 
 ul li button {

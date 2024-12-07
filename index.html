@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Shopping List</h1>
-        <input type="text" id="itemInput" placeholder="Enter an item">
-        <button id="addItemButton">Add Item</button>
-        <ul id="shoppingList">
-            <!-- List items will be added here dynamically -->
-        </ul>
+    <div class="container-fluid">
+        <h1 class="text-center">Shopping List</h1>
+        <div class="row justify-content-center mb-2">
+            <div class="col-12 col-md-8 col-lg-6">
+                <input type="text" id="itemInput" class="form-control mb-2" placeholder="Enter an item">
+                <button id="addItemButton" class="btn btn-primary w-100 mb-2">Add Item</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="shoppingList">
+                        <!-- List items will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
